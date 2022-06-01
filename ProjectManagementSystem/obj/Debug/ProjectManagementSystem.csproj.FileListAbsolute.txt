@@ -1,0 +1,5 @@
+E:\Projects\Working\ProjectManagementSystem_C#\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.dll
+E:\Projects\Working\ProjectManagementSystem_C#\ProjectManagementSystem\ProjectManagementSystem\bin\Debug\ProjectManagementSystem.pdb
+E:\Projects\Working\ProjectManagementSystem_C#\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.csprojResolveAssemblyReference.cache
+E:\Projects\Working\ProjectManagementSystem_C#\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.dll
+E:\Projects\Working\ProjectManagementSystem_C#\ProjectManagementSystem\ProjectManagementSystem\obj\Debug\ProjectManagementSystem.pdb
