@@ -75,6 +75,8 @@
             this.LoginBtn.Text = "LOGIN";
             this.LoginBtn.UseVisualStyleBackColor = false;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
+            this.LoginBtn.MouseEnter += new System.EventHandler(this.LoginBtn_MouseEnter);
+            this.LoginBtn.MouseLeave += new System.EventHandler(this.LoginBtn_MouseLeave);
             // 
             // txtPass
             // 

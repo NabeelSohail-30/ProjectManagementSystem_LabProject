@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjectManagementSystemDataSet4" targetNamespace="http://tempuri.org/ProjectManagementSystemDataSet4.xsd" xmlns:mstns="http://tempuri.org/ProjectManagementSystemDataSet4.xsd" xmlns="http://tempuri.org/ProjectManagementSystemDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProjectManagementSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProjectManagementSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProjectManagementSystem_DesktopApplication.Properties.Settings.GlobalReference.Default.ProjectManagementSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viewClientsDetailTableAdapter" GeneratorDataComponentClassName="viewClientsDetailTableAdapter" Name="viewClientsDetail" UserDataComponentName="viewClientsDetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProjectManagementSystemConnectionString (Settings)" DbObjectName="ProjectManagementSystem.dbo.viewClientsDetail" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ClientId, ClientName FROM dbo.viewClientsDetail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ClientId" DataSetColumn="ClientId" />
+              <Mapping SourceColumn="ClientName" DataSetColumn="ClientName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjectManagementSystemDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProjectManagementSystemDataSet4" msprop:Generator_UserDSName="ProjectManagementSystemDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewClientsDetail" msprop:Generator_TableClassName="viewClientsDetailDataTable" msprop:Generator_TableVarName="tableviewClientsDetail" msprop:Generator_TablePropName="viewClientsDetail" msprop:Generator_RowDeletingName="viewClientsDetailRowDeleting" msprop:Generator_RowChangingName="viewClientsDetailRowChanging" msprop:Generator_RowEvHandlerName="viewClientsDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="viewClientsDetailRowDeleted" msprop:Generator_UserTableName="viewClientsDetail" msprop:Generator_RowChangedName="viewClientsDetailRowChanged" msprop:Generator_RowEvArgName="viewClientsDetailRowChangeEvent" msprop:Generator_RowClassName="viewClientsDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientId" msprop:Generator_ColumnVarNameInTable="columnClientId" msprop:Generator_ColumnPropNameInRow="ClientId" msprop:Generator_ColumnPropNameInTable="ClientIdColumn" msprop:Generator_UserColumnName="ClientId" type="xs:int" />
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:viewClientsDetail" />
+      <xs:field xpath="mstns:ClientId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

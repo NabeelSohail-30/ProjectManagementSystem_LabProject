@@ -33,5 +33,29 @@ namespace ProjectManagementSystem_DesktopApplication
         {
             lblsignout.Text = $"User : {Global.LoggedUser.UserFullName}{Environment.NewLine}You have been logged out successfully";
         }
+
+        private void LoginBtn_MouseEnter(object sender, EventArgs e)
+        {
+            LoginBtn.BackColor = Color.White;
+            LoginBtn.ForeColor = Color.FromArgb(28, 101, 140);
+        }
+
+        private void LoginBtn_MouseLeave(object sender, EventArgs e)
+        {
+            LoginBtn.BackColor = Color.FromArgb(57, 138, 185);
+            LoginBtn.ForeColor = Color.White;
+        }
+
+        private void btnExit_MouseEnter(object sender, EventArgs e)
+        {
+            btnExit.BackColor = Color.White;
+            btnExit.ForeColor = Color.FromArgb(28, 101, 140);
+        }
+
+        private void btnExit_MouseLeave(object sender, EventArgs e)
+        {
+            btnExit.BackColor = Color.FromArgb(57, 138, 185);
+            btnExit.ForeColor = Color.White;
+        }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjectManagementSystem
 {
-    interface IUserAccounts
+    public interface IClientDetailRepo
     {
-        UserAccountsModel Authenticate(string pUserName, string pUserPassword);
+        int Add(ClientDetailModel client);
     }
 }

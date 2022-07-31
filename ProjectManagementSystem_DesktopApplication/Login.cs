@@ -32,6 +32,7 @@ namespace ProjectManagementSystem_DesktopApplication
             {
 
                 Global.LoggedUser.UserId = User.UserId;
+                Global.LoggedUser.UserName = User.UserName;
                 Global.LoggedUser.UserFullName = User.UserFullName;
                 Global.LoggedUser.Email = User.Email;
                 Global.LoggedUser.Mobile = User.Mobile;
@@ -43,6 +44,18 @@ namespace ProjectManagementSystem_DesktopApplication
                 this.Hide(); 
             }
 
+        }
+
+        private void LoginBtn_MouseEnter(object sender, EventArgs e)
+        {
+            LoginBtn.BackColor = Color.White;
+            LoginBtn.ForeColor = Color.FromArgb(28, 101, 140);
+        }
+
+        private void LoginBtn_MouseLeave(object sender, EventArgs e)
+        {
+            LoginBtn.BackColor = Color.FromArgb(57, 138, 185);
+            LoginBtn.ForeColor = Color.White;
         }
     }
 }

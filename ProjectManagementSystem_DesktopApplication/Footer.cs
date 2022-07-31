@@ -16,5 +16,11 @@ namespace ProjectManagementSystem_DesktopApplication
         {
             InitializeComponent();
         }
+
+        private void Footer_Load(object sender, EventArgs e)
+        {
+            string userSummary = $"User: {Global.LoggedUser.UserFullName} --- Logged in as: {Global.LoggedUser.LoginRole} --- Logged in Since: {Global.LoggedUser.LoginDateTime}";
+            lblUserDetails.Text = userSummary;
+        }
     }
 }

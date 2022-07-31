@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientDetailModel.cs" />
+    <Compile Include="ClientDetailRepo.cs" />
     <Compile Include="DbConnection.cs" />
-    <Compile Include="IUserAccounts.cs" />
+    <Compile Include="IClientDetailRepo.cs" />
+    <Compile Include="IProjectDetailsRepo.cs" />
+    <Compile Include="IUserAccountsRepo.cs" />
+    <Compile Include="ProjectDetailsModel.cs" />
+    <Compile Include="ProjectDetailsRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserAccountsModel.cs" />
     <Compile Include="UserAccountsRepo.cs" />

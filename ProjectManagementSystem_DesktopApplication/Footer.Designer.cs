@@ -78,6 +78,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Name = "Footer";
             this.Size = new System.Drawing.Size(1460, 80);
+            this.Load += new System.EventHandler(this.Footer_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);

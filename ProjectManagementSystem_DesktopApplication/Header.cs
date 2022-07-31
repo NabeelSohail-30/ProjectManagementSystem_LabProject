@@ -27,5 +27,37 @@ namespace ProjectManagementSystem_DesktopApplication
             ParentForm.Hide();
             FormSignOut.Show();
         }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            ProfileView form = new ProfileView();
+            Form ParentForm = (Form)this.Parent;
+            ParentForm.Hide();
+            form.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            FormDashboard form = new FormDashboard();
+            Form ParentForm = (Form)this.Parent;
+            ParentForm.Hide();
+            form.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            ClientsDetail form = new ClientsDetail();
+            Form ParentForm = (Form)this.Parent;
+            ParentForm.Hide();
+            form.Show();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            ProjectDetails form = new ProjectDetails();
+            Form ParentForm = (Form)this.Parent;
+            ParentForm.Hide();
+            form.Show();
+        }
     }
 }

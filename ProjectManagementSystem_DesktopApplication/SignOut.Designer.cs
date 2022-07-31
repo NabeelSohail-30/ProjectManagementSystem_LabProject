@@ -49,6 +49,8 @@
             this.LoginBtn.Text = "LOGIN AGAIN";
             this.LoginBtn.UseVisualStyleBackColor = false;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
+            this.LoginBtn.MouseEnter += new System.EventHandler(this.LoginBtn_MouseEnter);
+            this.LoginBtn.MouseLeave += new System.EventHandler(this.LoginBtn_MouseLeave);
             // 
             // lblsignout
             // 
@@ -86,6 +88,8 @@
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.MouseEnter += new System.EventHandler(this.btnExit_MouseEnter);
+            this.btnExit.MouseLeave += new System.EventHandler(this.btnExit_MouseLeave);
             // 
             // label1
             // 
